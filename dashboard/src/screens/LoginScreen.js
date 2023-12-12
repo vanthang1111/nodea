@@ -21,7 +21,7 @@ const Login = ({history}) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(login(email, password)); // Fix the arguments passed to the login function
+    dispatch(login(email,password)); // Fix the arguments passed to the login function
   };
 
   return (

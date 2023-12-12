@@ -8,7 +8,7 @@ const productRoute = express.Router()
 //get all products
 productRoute.get("/",asyncHandler(async(req,res)=>{
     //so san pham trong trang
-    const pageSize = 4;
+    const pageSize = 6;
     const page = Number(req.query.pageNumber)||1;
     const keyword=req.query.keyword?{
         name:{
